@@ -1,0 +1,21 @@
+language: ruby
+ruby: 2.7.4
+
+script:
+  - bundle exec rspec --format documentation
+  - sleep 2
+
+jobs:
+  include:
+    - os: linux
+      dist: focal
+    - os: linux
+      dist: bionic
+    - os: linux
+      dist: xenial
+    - os: osx
+      osx_image: xcode13.4
+    - os: osx
+      osx_image: xcode12.5
+    - os: osx
+      osx_image: xcode11.2
