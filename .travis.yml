@@ -13,9 +13,3 @@ jobs:
       dist: bionic
     - os: linux
       dist: xenial
-    - os: osx
-      osx_image: xcode13.4
-    - os: osx
-      osx_image: xcode12.5
-    - os: osx
-      osx_image: xcode11.2
