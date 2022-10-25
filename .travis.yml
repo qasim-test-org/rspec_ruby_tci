@@ -1,15 +1,11 @@
+os: linux
+dist: jammy
 language: ruby
-ruby: 2.7.4
+ruby:
+  - 2.7.6
+  - 3.1.2
 
 script:
-  - bundle exec rspec --format documentation
+  - bundle exec rspec 
   - sleep 2
 
-jobs:
-  include:
-    - os: linux
-      dist: focal
-    - os: linux
-      dist: bionic
-    - os: linux
-      dist: xenial
