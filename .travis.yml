@@ -6,7 +6,7 @@ addons:
     organization: "test-runs-tci"
     token: $SONAR_TOKEN
 script:
-#  - bundle exec rspec --format documentation
+  - bundle exec rspec --format documentation
   - sleep 3
   - sonar-scanner
 
