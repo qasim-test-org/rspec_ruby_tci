@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require "string_calculator"
 describe StringCalculator do
   describe ".add" do

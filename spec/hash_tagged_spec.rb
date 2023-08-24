@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 require "hash_tagged"
 describe HashTagged do
   describe ".hashtag" do
