@@ -1,5 +1,4 @@
-require 'simplecov'
-SimpleCov.start
+require 'spec_helper'
 
 require "hash_tagged"
 describe HashTagged do
