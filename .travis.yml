@@ -1,13 +1,13 @@
 # TEST RUN
 language: ruby
 ruby: 2.7.4
-jdk: openjdk17
+#jdk: openjdk17
 #addons:
 #  sonarcloud:
 #    organization: "test-runs-tci"
 #    token: $SONAR_TOKEN
 
-#cache: bundler
+cache: bundler
 
 script:
   - bundle exec rspec --format documentation
