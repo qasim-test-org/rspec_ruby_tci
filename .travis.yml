@@ -7,7 +7,7 @@ jdk: openjdk17
 #    organization: "test-runs-tci"
 #    token: $SONAR_TOKEN
 
-cache: bundler
+#cache: bundler
 
 script:
   - bundle exec rspec --format documentation
