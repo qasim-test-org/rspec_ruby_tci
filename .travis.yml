@@ -5,6 +5,9 @@ addons:
   sonarcloud:
     organization: "test-runs-tci"
     token: $SONAR_TOKEN
+
+cache: bundler
+
 script:
   - bundle exec rspec --format documentation
   - sleep 3
