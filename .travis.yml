@@ -2,17 +2,17 @@
 language: ruby
 ruby: 2.7.4
 jdk: openjdk17
-addons:
-  sonarcloud:
-    organization: "test-runs-tci"
-    token: $SONAR_TOKEN
+#addons:
+#  sonarcloud:
+#    organization: "test-runs-tci"
+#    token: $SONAR_TOKEN
 
 cache: bundler
 
 script:
   - bundle exec rspec --format documentation
   - sleep 3
-  - sonar-scanner
+  #- sonar-scanner
 
 jobs:
   include:
