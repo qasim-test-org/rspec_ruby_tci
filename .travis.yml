@@ -1,9 +1,14 @@
 language: ruby
 ruby: 2.7.4
 
+addons:
+  sonarcloud:
+    organization: "test-runs-tci"
+    token: $SONAR_TOKEN
 script:
   - bundle exec rspec --format documentation
   - sleep 2
+  - sonar-scanner
 
 jobs:
   include:
