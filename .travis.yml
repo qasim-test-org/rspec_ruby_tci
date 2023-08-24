@@ -1,6 +1,6 @@
-language: java
-#ruby: 2.7.4
-jdk: 17
+language: ruby
+ruby: 2.7.4
+jdk: openjdk17
 addons:
   sonarcloud:
     organization: "test-runs-tci"
