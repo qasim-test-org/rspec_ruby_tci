@@ -7,7 +7,7 @@ addons:
     token: $SONAR_TOKEN
 script:
   - bundle exec rspec --format documentation
-  - sleep 2
+  - sleep 3
   - sonar-scanner
 
 jobs:
