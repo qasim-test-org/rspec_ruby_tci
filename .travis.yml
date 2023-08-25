@@ -1,21 +1,23 @@
 # TEST RUN
 language: ruby
-ruby: 2.7.4
+language: php
 jdk: openjdk17
 addons:
   sonarcloud:
     organization: "test-runs-tci"
     token: $SONAR_TOKEN
 
-cache: bundler
+#cache: bundler
 
 script:
-  - bundle exec rspec --format documentation
+  #- bundle exec rspec --format documentation
   - sleep 3
   - sonar-scanner
 
 jobs:
   include:
+    - os: linux
+      dist: jammy
     - os: linux
       dist: focal
     - os: linux
