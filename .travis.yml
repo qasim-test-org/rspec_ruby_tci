@@ -10,7 +10,7 @@ addons:
 
 #cache: bundler
 
-# Setup JDK 17
+# Setup JDK 17 # 
 before_install:
   - sudo apt-get -y remove default-jdk
   - sudo apt -y autoremove
