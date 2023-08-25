@@ -1,7 +1,7 @@
 # TEST RUN
 #language: ruby
 language: php
-php: 8.0.0
+php: 8.1.2
 jdk: openjdk17
 addons:
   sonarcloud:
